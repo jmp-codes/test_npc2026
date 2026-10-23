@@ -17,6 +17,19 @@
     </div>
   </header>
 
+  <div class="timerbar" id="timerbar">
+    <div class="wrap timerin">
+      <div class="clock" id="clock" role="timer" aria-label="Time remaining">60:00</div>
+      <div class="tbtns">
+        <button type="button" id="tStart" class="primary">Start</button>
+        <button type="button" id="tReset">Reset</button>
+        <button type="button" id="tTest">Test sound</button>
+        <button type="button" id="tStop" hidden>Stop sound</button>
+      </div>
+      <div class="tmsg" id="tmsg" role="status" aria-live="polite">1 hour. Press Start when you begin.</div>
+    </div>
+  </div>
+
   <div class="wrap layout">
     <nav id="nav" aria-label="Problems"></nav>
     <main id="problems"></main>
@@ -28,5 +41,6 @@
 
   <script src="problems.js"></script>
   <script src="app.js"></script>
+  <script src="timer.js"></script>
 </body>
 </html>
